@@ -1,0 +1,25 @@
+graph = {
+    'A': {'B': {'distance': 5, 'risk': 'low', 'type': 'highway'},
+          'C': {'distance': 10, 'risk': 'medium', 'type': 'local'}},
+    'B': {'A': {'distance': 5, 'risk': 'low', 'type': 'highway'},
+          'D': {'distance': 3, 'risk': 'low', 'type': 'local'},
+          'E': {'distance': 7, 'risk': 'high', 'type': 'highway'}},
+    'C': {'A': {'distance': 10, 'risk': 'medium', 'type': 'local'},
+          'F': {'distance': 12, 'risk': 'low', 'type': 'highway'}},
+    'D': {'B': {'distance': 3, 'risk': 'low', 'type': 'local'}},
+    'E': {'B': {'distance': 7, 'risk': 'high', 'type': 'highway'},
+          'F': {'distance': 4, 'risk': 'medium', 'type': 'local'}},
+    'F': {'C': {'distance': 12, 'risk': 'low', 'type': 'highway'},
+          'E': {'distance': 4, 'risk': 'medium', 'type': 'local'}}
+}
+
+
+
+graph = {
+    'A': {'B': {'distance': 5, 'risk': 'low', 'type': 'local'}, 'C': {'distance': 10, 'risk': 'high', 'type': 'highway'}},
+    'B': {'D': {'distance': 12, 'risk': 'high', 'type': 'local'},'F': {'distance': 1, 'risk': 'low', 'type': 'local'}},
+    'C': {'E': {'distance': 10, 'risk': 'medium', 'type': 'highway'}},
+    'D': {'E': {'distance': 1, 'risk': 'low', 'type': 'local'}, 'F': {'distance': 2, 'risk': 'low', 'type': 'local'}},
+    'E': {'F': {'distance': 5, 'risk': 'medium', 'type': 'local'}},
+    'F': {}
+}
